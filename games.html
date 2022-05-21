@@ -1,0 +1,133 @@
+<html>
+<head> 
+	<style>
+
+*{
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+.nav ul{ 
+	list-style-type: none;
+}	
+.nav ul li{
+float:left;
+width:100px; 
+text-align:center; 
+margin-left:5px;
+}
+.nav ul li ul li{
+ margin-left: 0px;
+}
+.nav ul ul{ 
+display:none;
+}
+.nav ul li:hover > ul{
+display:block;
+}
+.nav ul li:hover{
+ background: #f2bc94;
+ color: #f2bc94; 
+ font-weight:bold;
+}
+.nav ul li ul li:hover{
+ background: #f2bc94; 
+ color: #f2bc94;
+ border-radius: 5px;
+}
+.container {
+  display: grid;
+  height: 300px;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.4fr 1fr 0.4fr;
+  grid-template-areas:  
+  "Header Header Header"
+  "S1 Main S2"
+  "Footer Footer Footer"
+
+}
+
+.header {
+  border-radius: 50px;
+    Background-color: #f2bc94;
+    grid-area: Header;
+	align: center;
+}
+
+.content-1 {
+  border-radius: 50px;
+    Background-color: #f2bc94;
+    grid-area: S1;
+}
+
+.content-2 {
+  border-radius: 50px;
+    background-color: #f2bc94;
+    grid-area: Main;
+}
+
+.content-3 {
+  border-radius: 50px;
+    background-color: #f2bc94;
+    grid-area: S2;
+}
+
+.footer {
+  border-radius: 50px;
+    background-color: #f2bc94;
+    grid-area: Footer;
+}
+
+@media screen and (max-width: 600px) {
+
+.container {
+  display: grid; 
+  grid-template-columns: 2.2fr; 
+  grid-template-rows: 0.4fr 0.7fr 1fr 0.7fr 0.4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Header"
+    "S1"
+    "Main"
+    "S2"
+    "Footer"; 
+}
+
+</style>
+
+<title>PT_CALUNOD</title>
+  </head>
+   <body> 
+<font color=#30110d face=arial>
+   <div class="container">
+<div align="center" class="header">
+  <div class=nav>
+<ul>
+           <li align=center><a style="font-weight:bold" href=index.html>HOME</a></li>
+           <li align=center><a style="font-weight:bold" href=myself.html>MYSELF</a></li> 
+           <li align=center><a style="font-weight:bold" href=games.html>GAMES</a></li>
+           <li align=center><a style="font-weight:bold" href=songs.html>songs</a></li>
+		   <li align=center><a style="font-weight:bold" href=food.html>FOOD</a></li>
+           <li align=center><a style="font-weight:bold" href=sports.html>SPORTS</a></li>  		   
+       </ul> 
+   </div> 
+</div> 
+<div align="center" class="content-1">
+<h2> VALORANT </h2>
+<h1> because it is very fun to play with friends.   </h1>
+</div>
+<div align="center" class="content-2">
+<h2> CSGO </h2>
+<h1> Counter-Strike is well-known for bringing nothing but the best gameplay when it comes to shooter games</h1>
+</div>
+<div align="center" class="content-3">
+<h2> GTA SAN ANDREAS </h2>
+<h1> because it is a iconic game many people play this. </h1>
+</div>
+<div align="center" class="footer">
+<h2> OSU </h2>
+<h1> because its a game that involves music </h1>
+</div>
+</div>
+</body> 
+</html>
